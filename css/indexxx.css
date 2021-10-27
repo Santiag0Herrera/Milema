@@ -1,0 +1,842 @@
+****************General********************
+
+html{
+    background-color: #efe9ee;
+    
+}
+
+body{
+    margin: 0px 0px 0px 0px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: "Lobster";
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+h2 {
+    font-family: "Lobster";
+    font-size: 35px;
+    text-align: justify;
+    color: rgb(75, 42, 20);
+    margin: 10px 10px 10px 10px;
+    justify-content: center;
+}
+
+p{
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+}
+
+h3 {
+    font-family: "Lobster";
+    font-size: 25px;
+    color:rgb(75, 42, 20);
+    margin: 0px 10px 0px 10px;
+}
+
+h4{
+    font-family: "Rubik", sans-serif;
+    font-size: 25px;
+}
+
+a{
+    color:rgb(75, 42, 20); 
+    text-decoration-line: none;
+    font-size: 22.5px;
+}
+
+/* .menu {
+    font-family: "Lobster";
+    background-color: rgb(185,157,154);
+    margin: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 56px;
+} */
+
+header{
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+}
+
+.pestaña{
+    color: rgb(254, 214, 227);
+    border-width: 3px;
+    text-decoration: underline;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.animate__animated{
+    font-size: 50px;
+    color: white;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgba(75, 42, 20, 0.383);
+}
+
+footer .redes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.redes h4{
+    margin: 0px 30px 0px 30px;
+}
+
+footer h2{
+    display: block;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0px 0px 25px 0px;
+    justify-content: center;
+}
+
+.menu ul{
+    font-family: "Lobster";
+    text-align: right;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/******************Index*********************/
+
+.Titulo{
+    margin-top:30px;
+}
+
+.chicos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 0px;
+    width: 99vw;
+}
+
+.chicos h3{
+    font-size: 25px;
+}
+
+.chicos li{
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    width: 25;
+}
+
+.chicos a{
+    float: right;
+}
+
+.chicos p{
+    font-size: 20px;
+}
+
+.chicos img{
+    width: 200px;
+    border-radius: 10px;
+}
+
+.chicos input{
+    height: 30px;
+    width: 100%;
+    border-radius: 20px;
+    border-color: rgb(117, 74, 45);
+    border-style: none;
+    background-color: rgba(75, 42, 20, 0.602);
+    color:rgb(172, 141, 115)
+}
+
+.Marina{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.287);
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+
+}
+
+.Marina img{
+    width: 600px;
+    height: 400px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.Marina img:hover{
+    transform: scale(1.09,1.09);
+}
+
+.Marina p{
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.fotoInicial{
+    height: 60vh;
+    background-image:url(https://i.pinimg.com/originals/5b/c0/b9/5bc0b979b9c589c7a5891961acf1ddbe.jpg);
+    background-position:center;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.609);
+}
+
+.intro h2{
+    color:rgb(224, 224, 224);
+}
+
+.intro input{
+    width: 10vw;
+    height: 5vh;
+    font-size: 22px;
+    border-radius: 10px;
+    border-color: none;
+    border-style: none;
+    background-color: rgb(185,157,154);
+    font-family: "Amiri" ;
+}
+
+/****************Catalogo**************/
+
+.busqueda{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+.busqueda input{
+    height: 30px;
+}
+
+.barraBusqueda{
+    width: 30vw;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(149, 114, 85, 0.5);
+    color: white;
+    padding: 5px;
+    margin:20px 2px;
+}
+
+::placeholder{
+    color: white;
+}
+
+.botonBuscar{
+    border-style: none;
+    border-radius: 10px;
+    background-color:rgb(149, 114, 85);
+    color: white;
+    margin:20px 2px;
+}
+
+.catalogoArticulos h3{
+    font-size: 25px;
+}
+
+.catalogoArticulos li{
+    background-color: rgba(75, 42, 20, 0.383);
+    border-color: rgb(75, 42, 20);;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.catalogoArticulos a{
+    float: right;
+}
+
+.catalogoArticulos p{
+    font-size: 20px;
+}
+
+.catalogoArticulos img{
+    width: 200px;
+    border-radius: 10px;
+}
+
+.catalogoArticulos input{
+    height: 40px;
+    border-radius: 20px;
+    border-color: rgb(117, 74, 45);
+    border-style: none;
+    background-color: rgba(75, 42, 20, 0.602);
+    color:rgb(172, 141, 115);
+}
+
+.catalogoArticulos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.paraTi{
+    grid-area: "parati";
+}
+
+.ultimo{
+    grid-area: "ultimo";
+}
+
+.introCatalogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.609);
+}
+
+.introCatalogo h2{
+    font-size: 60px;
+    color:rgb(224, 224, 224);
+}
+
+.introCatalogo input{
+    height: 5vh;
+    font-size: 22px;
+    border-radius: 10px;
+    border-color: none;
+    border-style: none;
+    background-color: rgb(185,157,154);
+    font-family: "Amiri" ;
+}
+
+.introCatalogo .botonBuscar{
+    border-style: none;
+    border-radius: 10px;
+    background-color:rgb(149, 114, 85);
+    color: white;
+    margin:20px 2px;
+}
+
+
+/***************Carrito***************/
+.botonComprar{
+    margin-right: 30px;
+    float: right;
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    background-color:rgb(149, 114, 85);
+    color: white;
+}
+
+.padre{
+    display: grid;
+    grid-template-columns: repeat(5,245px);
+    grid-template-rows: repeat(2,340px);
+    justify-content: center;
+    padding: 10px;
+}
+
+.padre li{
+    margin: 8px;
+    padding: 10px;
+    background-color: rgba(75, 42, 20, 0.383);
+    border-color: rgb(75, 42, 20);
+    border-radius: 10px;
+    align-content: center;
+}
+
+.padre h4{
+    font-size: 15px;
+}
+
+.padre img{
+    height: 209px;
+    border-radius: 10px;
+}
+
+/*GRID DE PAGINA CARRITO*/
+
+.bodyCarrito{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "intro intro intro"
+    "main main slide"
+    "main main slide"
+    "footer footer footer";
+    grid-template-columns: 1fr 3fr 0,75fr;
+    grid-template-rows: 56px 1fr 1fr 1fr;
+
+}
+
+.fotoInicial{
+    grid-area: intro;
+}
+
+.navigationCarito{
+    grid-area: header;
+}
+
+.mainCarrito{
+    grid-area: main;
+}
+
+.footerCarrito{
+    grid-area: footer;
+}
+
+.slidebarCarrito{
+    grid-area: slide;
+    background-color: rgba(75, 42, 20, 0.383);
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 340px; 
+    justify-self: end;
+}
+
+.slidebarCarrito h3{
+    font-size: 20px;
+}
+
+.slidebarCarrito p{
+    font-size: 15px;
+}
+
+.slidebarCarrito ul{
+    margin: 0px;
+    padding: 10px;
+}
+
+.slidebarCarrito img{
+    width: 100px;
+    border-radius: 10px;
+    float: right;
+}
+
+.slidebarCarrito li{
+    border-radius: 10px;
+    background-color: rgba(75, 42, 20, 0.383);
+    margin: 10px;
+    padding: 10px;
+}
+
+.slidebarCarrito input{
+    height: 30px;
+    width: 100%;
+    border-radius: 20px;
+    border-color: rgb(117, 74, 45);
+    border-style: none;
+    background-color: rgba(75, 42, 20, 0.602);
+    color:rgb(172, 141, 115)
+}
+
+.slidebarCarrito h2{
+    font-size: 25px;
+}
+
+/**************NOSOTROS****************/
+
+.mapa{
+    width:100vw;
+    height: 400px;
+    border-style: none;
+    margin: 10px 0px 10px 0px;
+}
+
+.NOSOTROS h2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.nosotros{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-radius: 10px;
+    margin-top:10px;
+    column-gap: 10px;
+}
+
+.quienesSomos{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.301);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.quienesSomos h2{
+    margin-top: 0px;
+}
+
+.porque{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.301);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.porque h2{
+    margin-top: 0px;
+}
+
+.fotoInicial{
+    height: 60vh;
+    background-image:url(https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG9tZSUyMGRlY29yfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80);
+    background-position:center;
+}
+
+/***********ANIMACIONES***************/
+
+input:hover{
+    background-color: rgb(190, 181, 175) ;
+    color: black;
+}
+
+.marina img :hover{
+    transform: scale(1.5,1.5);
+}
+
+/*POST BOOSTRAP*/
+
+nav{
+    font-family: "Lobster";
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar-brand{
+    font-size: 40px;
+    padding: 0px;
+}
+
+.container-fluid{
+    padding: 0px 12px;
+position: relative;
+    z-index: 1000;
+}
+
+.navbar-light{
+    padding: 0px;
+}
+
+button .btn-lg :hover{
+    background-color: rgb(121, 99, 97);
+    border-radius: 10px;
+    border-color: none;
+    border-style: none;
+    font-family: "Amiri";
+    color: rgb(75, 42, 20);
+}
+
+.btn-lg a :hover{
+    color: rgb(75, 42, 20);
+}
+
+.btn-primary{
+    padding: 0px;
+}
+
+.btn-lg{
+    border-radius: 10px;
+    border-color: none;
+    border-style: none;
+    background-color: rgb(185,157,154);
+    font-family: "Amiri";
+}
+
+.card .mb-3{
+    width: 100vw;
+    align-items: center;
+    margin: 0px;
+}
+
+.row{
+    justify-content: center;
+    width: 100vw;
+}
+
+.card{
+    border-style: none;
+}
+
+.chicos li{
+    padding: 0px;
+}
+
+
+.row .g-0{
+    width: 100vw;
+}
+
+.col-md-4{
+    width: 50vw;
+}
+
+.col-md-8{
+    width: 50vw;
+}
+
+
+
+
+/* *************RESPOSIVE CSS**************/
+
+@media only screen and (min-width: 1px)
+{
+    .nav{
+        width: 100vw;
+    }
+
+    .img-fluid {
+        width: 50vw;
+    }
+
+    .col-md-8{
+        width: 50vw;
+    }
+
+    .animate__animated{
+        font-size: 30px;
+    }
+
+    .btn-lg{
+        width:20%;
+        font-size: 20%;
+        padding: 0px;
+    }
+
+    button{
+        height: 30px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    button p{
+        font-size: 15px;
+        margin: 0px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .chicos .card{
+        width: 100px;
+        height: 160px;
+        margin:20px;
+    }
+
+    .card img{
+        width: 100px;
+        border-radius: 3px;
+    }
+
+    .card-body{
+        padding: 3px;
+        height: 60px;
+    }
+
+    .card h5{
+        font-size: 10px;
+    }
+
+    .card p {
+        font-size: 5px;
+    }
+
+    .card a{
+        width: 100px;
+        height: 10px;
+        font-size: 5px;
+    }
+
+    .card-text{
+        padding-bottom: 2px;
+        margin: 0px;
+    }
+
+    .bi-instagram{
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+
+    .bi-facebook{
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+
+    .bi-whatsapp{
+        width: 20px;
+        height: 20px;
+        margin:10px;
+    }
+
+    .bi-envelope{
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .nav{
+        width: 100vw;
+    }
+
+    .animate__animated{
+        font-size: 45px;
+    }
+
+    .btn-lg{
+        width:20%;
+        font-size: 20%;
+    }
+
+    button{
+        height: 45px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    button p{
+        font-size: 22.5px;
+        margin: 0px;
+    }
+
+    h2{
+        font-size: 37.5px;
+    }
+
+    .chicos .card{
+        width: 150px;
+        height: 240px;
+    }
+
+    .card img{
+        width: 150px;
+        border-radius: 4.5px;
+    }
+
+    .card-body{
+        padding: 3px;
+        height: 75px;
+    }
+
+    .card h5{
+        font-size: 15px;
+    }
+
+    .card p {
+        font-size: 10px;
+    }
+
+    .card a{
+        width: 150px;
+        height: 15px;
+        font-size: 10px;
+    }
+
+    .card-text{
+        padding-bottom: 2px;
+        margin: 0px;
+    }
+
+    .card .mb-3{
+        width: 100vw;
+    }
+
+    .marinaImg{
+        width: 50;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .nav{
+        width: 100vw;
+    }
+
+    .animate__animated{
+        font-size: 67.5px;
+    }
+
+    .btn-lg{
+        width:20%;
+        font-size: 20%;
+    }
+
+    button{
+        height: 70px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    button p{
+        font-size: 33.75px;
+        margin: 0px;
+    }
+
+    h2{
+        font-size: 56.25px;
+    }
+
+    .chicos .card{
+        width: 225px;
+        height: 360px;
+    }
+
+    .card img{
+        width: 225px;
+        border-radius: 6.75px;
+    }
+
+    .card-body{
+        padding: 3px;
+        height: 112.5px;
+    }
+
+    .card h5{
+        font-size: 22.5px;
+    }
+
+    .card p {
+        font-size: 15px;
+    }
+
+    .card a{
+        width: 225px;
+        height: 22.5px;
+        font-size: 15px;
+    }
+
+    .card-text{
+        padding-bottom: 2px;
+        margin: 0px;
+    }
+}
