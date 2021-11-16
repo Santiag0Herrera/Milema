@@ -137,7 +137,7 @@ footer {
 
 .fotoInicial {
   height: 60vh;
-  background-image: url(https://i.pinimg.com/originals/5b/c0/b9/5bc0b979b9c589c7a5891961acf1ddbe.jpg);
+  background-image: url(https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG9tZSUyMGRlY29yfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80);
   background-position: center; }
 
 .intro {
@@ -278,46 +278,54 @@ footer {
     border-radius: 10px; }
 
 /**************NOSOTROS****************/
-.mapa {
-  width: 100vw;
-  height: 400px;
-  border-style: none;
-  margin: 10px 0px 10px 0px; }
-
-.NOSOTROS h2 {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center; }
-
-.nosotros {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border-radius: 10px;
-  margin-top: 10px;
-  column-gap: 10px; }
-
+/***********SASS II DESAFIO************/
+/*modos:tradicional ; halloween ; navidad */
 .quienesSomos {
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.301);
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 10px; }
-  .quienesSomos h2 {
-    margin-top: 0px; }
+  background-color: #b99d9ad7;
+  width: 90vw;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
 
 .porque {
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.301);
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 10px; }
-  .porque h2 {
-    margin-top: 0px; }
+  background-color: #b99d9ad7;
+  width: 90vw;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
 
-.fotoInicial {
-  height: 60vh;
-  background-image: url(https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG9tZSUyMGRlY29yfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80);
-  background-position: center; }
+.nosotros {
+  width: 90vw;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
+
+.contenedorMapa {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
+
+.mapa {
+  width: 98.9vw;
+  height: 90vh; }
+
+main {
+  background-color: none; }
+
+/***********SASS II DESAFIO************/
+.NOSOTROS {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap; }
 
 /***********ANIMACIONES***************/
 input:hover {

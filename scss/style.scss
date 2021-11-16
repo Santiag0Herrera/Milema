@@ -184,7 +184,7 @@ footer {
 
 .fotoInicial{
     height: 60vh;
-    background-image:url(https://i.pinimg.com/originals/5b/c0/b9/5bc0b979b9c589c7a5891961acf1ddbe.jpg);
+    background-image:url(https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG9tZSUyMGRlY29yfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80);
     background-position:center;
 }
 
@@ -371,60 +371,78 @@ footer {
 }
 
 /**************NOSOTROS****************/
-
-.mapa{
-    width:100vw;
-    height: 400px;
-    border-style: none;
-    margin: 10px 0px 10px 0px;
-}
-
-.NOSOTROS {
-    h2{
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    }
-}
-
-.nosotros{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    border-radius: 10px;
-    margin-top:10px;
-    column-gap: 10px;
-}
+/***********SASS II DESAFIO************/
+$ancho:90vw;
+$alto:90vh;
+$colorFondo:#b99d9ad7;
+$bordes:10px;
+$padding:15px;
+$margin:15px;
+$pagina:tradicional;         /*modos:tradicional ; halloween ; navidad */
+$fondoNavidad:url(https://media.istockphoto.com/vectors/christmas-pattern-vector-id1061438608);
+$fondoHalloween:url(https://previews.123rf.com/images/morys/morys1309/morys130900017/23211016-textura-perfecta-de-halloween-ilustraci%C3%B3n-del-vector-.jpg);
 
 .quienesSomos{
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.301);
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
-
-    h2{
-        margin-top: 0px;
-    }
+    background-color: $colorFondo;
+    width: $ancho;
+    border-radius: $bordes;
+    padding: $padding;
+    margin: $margin 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center
 }
 
 .porque{
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.301);
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
+    background-color: $colorFondo;
+    width: $ancho;
+    border-radius: $bordes;
+    padding: $padding;
+    margin: $margin 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
 
-    h2{
-        margin-top: 0px;
+.nosotros{
+    width: $ancho;
+    border-radius: $bordes;
+    padding: $padding;
+    margin: $margin 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.contenedorMapa{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.mapa{
+    width: $ancho+8.9;
+    height: $alto;
+}
+
+main{
+    @if $pagina==tradicional{
+        background-color: none;
+    }
+    @else if $pagina==navidad{
+        background-image: $fondoNavidad;
+    }
+    @else if $pagina==halloween{
+        background-image: $fondoHalloween;
     }
 }
 
-.fotoInicial{
-    height: 60vh;
-    background-image:url(https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG9tZSUyMGRlY29yfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80);
-    background-position:center;
+/***********SASS II DESAFIO************/
+.NOSOTROS{
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
 }
-
 /***********ANIMACIONES***************/
 
 input:hover{
