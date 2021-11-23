@@ -333,10 +333,15 @@ footer {
 .BOTON {
     display: flex;
     justify-content: end;
+    :hover{
+        background-color:rgb(149, 134, 121);
+        color: rgb(105, 97, 97);
+    }
 }
 
 .botonComprar{
-    margin: 10px 30px;
+    padding: 10px;
+    margin: 30px;
     height: 50px;
     border-radius: 10px;
     border-style: none;
@@ -374,7 +379,7 @@ footer {
 /***********SASS II DESAFIO************/
 $ancho:90vw;
 $alto:90vh;
-$colorFondo:#b99d9ad7;
+$Fondo: url(https://st4.depositphotos.com/9563468/i/600/depositphotos_379827316-stock-photo-soft-pink-background-rose-pattern.jpg);
 $bordes:10px;
 $padding:15px;
 $margin:15px;
@@ -383,7 +388,7 @@ $fondoNavidad:url(https://media.istockphoto.com/vectors/christmas-pattern-vector
 $fondoHalloween:url(https://previews.123rf.com/images/morys/morys1309/morys130900017/23211016-textura-perfecta-de-halloween-ilustraci%C3%B3n-del-vector-.jpg);
 
 .quienesSomos{
-    background-color: $colorFondo;
+    background-image: $Fondo;
     width: $ancho;
     border-radius: $bordes;
     padding: $padding;
@@ -394,7 +399,7 @@ $fondoHalloween:url(https://previews.123rf.com/images/morys/morys1309/morys13090
 }
 
 .porque{
-    background-color: $colorFondo;
+    background-image: $Fondo;
     width: $ancho;
     border-radius: $bordes;
     padding: $padding;

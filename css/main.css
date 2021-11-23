@@ -249,9 +249,13 @@ footer {
 .BOTON {
   display: flex;
   justify-content: end; }
+  .BOTON :hover {
+    background-color: #958679;
+    color: #696161; }
 
 .botonComprar {
-  margin: 10px 30px;
+  padding: 10px;
+  margin: 30px;
   height: 50px;
   border-radius: 10px;
   border-style: none;
@@ -281,7 +285,7 @@ footer {
 /***********SASS II DESAFIO************/
 /*modos:tradicional ; halloween ; navidad */
 .quienesSomos {
-  background-color: #b99d9ad7;
+  background-image: url(https://st4.depositphotos.com/9563468/i/600/depositphotos_379827316-stock-photo-soft-pink-background-rose-pattern.jpg);
   width: 90vw;
   border-radius: 10px;
   padding: 15px;
@@ -291,7 +295,7 @@ footer {
   align-items: center; }
 
 .porque {
-  background-color: #b99d9ad7;
+  background-image: url(https://st4.depositphotos.com/9563468/i/600/depositphotos_379827316-stock-photo-soft-pink-background-rose-pattern.jpg);
   width: 90vw;
   border-radius: 10px;
   padding: 15px;
