@@ -1,14 +1,30 @@
-
-alert("Hola, Bienvenido a Milema! Create una cuenta.");
-class Perfil{
-    constructor(nombre, apellido, contraseña){
-    this.nombre = nombre;
-    this.apellido = apellido;
-    this.constraseña = contraseña;
+const usuarios = [];
+var Inicio = prompt("Ya tienes cuenta?");
+if (Inicio === "No" || Inicio === "no" || Inicio === "NO"){
+    var usuarioNuevo = {
+        nombre: prompt("Como te llamas?"),
+        correo: prompt("Ingrese un correo electronico"),
+        edad: parseInt(prompt("Cuantos años tienes?")),
+        direccion: prompt("Direccion de residencia"),
+        contraseña: prompt("Escriba una contraseña")
     }
-    saludar(){
-        alert("Buen dia "+ this.nombre + " " + this.apellido);
+    alert("Bienvenido " + usuarioNuevo.nombre);
+}else{
+    Inicio = prompt("Nombre de Usuario:");
+    const buscar = usuarios.find(nombre => nombre != " ");
+    if(buscar != undefined){
+        alert("Bienvenido" + this.nombre);
+    }else{
+        alert("Nombre de usuario no existe. Registrate")
+        var usuarioNuevo = {
+            nombre: prompt("Como te llamas?"),
+            correo: prompt("Ingrese un correo electronico"),
+            edad: parseInt(prompt("Cuantos años tiene?")),
+            direccion: prompt("Direccion de residencia"),
+            contraseña: prompt("Escriba una contraseña")
+        }
+        alert("Bienvenido " + usuarioNuevo.nombre);
     }
 }
-const usuario = new Perfil(prompt("Cual es tu Nombre?"), prompt("Cual es tu apellido?"), prompt("Crea una Contraseña"));
-usuario.saludar();
+console.log("Se ingresaron los siguientes datos: " + " Nombre: " + usuarioNuevo.nombre + " Correo: " + usuarioNuevo.correo + " Edad: " + usuarioNuevo.edad + " Direccion: " + usuarioNuevo.direccion + " Contraseña: " + usuarioNuevo.contraseña);
+usuarios.push(usuarioNuevo);
